@@ -1,0 +1,1 @@
+﻿<?xml version="1.0" encoding="utf-8"?><pf:root xmlns:pf="Auftragsliste"><Auftrag ID="1234"><Title title="Testauftrag">Testauftrag</Title><Kategorie Kat="1">1</Kategorie><Erstelldatum date="21.05.2021 00:00:00">21.05.2021 00:00:00</Erstelldatum><KundenNr KuNr="1234">1234</KundenNr><Beschreibung>Testauftrag von Martin Schumacher</Beschreibung></Auftrag></pf:root>
