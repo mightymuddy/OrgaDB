@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -12,6 +13,13 @@ namespace OrgaMS
 {
     public partial class frmAuftraege : Form
     {
+        Form form;
+        public frmAuftraege(ref Form form)
+        {
+            this.form = form;
+            InitializeComponent();
+        }
+
         public frmAuftraege()
         {
             InitializeComponent();
@@ -39,6 +47,11 @@ namespace OrgaMS
             DataManager.writeNewAuftrag(auftrag);
 
             
+        }
+
+        private void frmAuftraege_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Program.OpenForm(this, new frmAuftraege());
         }
     }
 }

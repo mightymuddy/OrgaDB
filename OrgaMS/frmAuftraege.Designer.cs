@@ -134,6 +134,7 @@ namespace OrgaMS
             this.Controls.Add(this.btnAccept);
             this.Name = "frmAuftraege";
             this.Text = "Form1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmAuftraege_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

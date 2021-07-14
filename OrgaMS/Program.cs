@@ -20,8 +20,21 @@ namespace OrgaMS
             DataManager.DatabaseOpen();
             DataManager.LoadDataFromEntity(DataManager.EnumEntities.Customer);
 
-            Application.Run(new frmAuftraege());
+            Application.Run(new StartOrga());
             
         }
+
+     
+        public static void OpenForm(Form parent, Form child)
+        {
+            if (child.GetType() == typeof(frmAuftraege))
+            {
+                child = new frmAuftraege(ref parent);
+                child.Show();
+                parent.Hide();
+            }
+
+        }
+        
     }
 }
